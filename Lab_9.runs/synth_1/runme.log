@@ -1,0 +1,561 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/vivoda/RGB2DVI_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/BaiduNetdiskDownload/vivado18.3/Vivado/2018.3/data/ip'.
+Command: synth_design -top top -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11584 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 479.840 ; gain = 105.805
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Lab_9' [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/Lab_9.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_5_10' [F:/vivoda/Lab_9/Lab_9.runs/synth_1/.Xil/Vivado-21852-DESKTOP-D6U3LDD/realtime/clk_5_10_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_5_10' (1#1) [F:/vivoda/Lab_9/Lab_9.runs/synth_1/.Xil/Vivado-21852-DESKTOP-D6U3LDD/realtime/clk_5_10_stub.v:5]
+WARNING: [Synth 8-350] instance 'clk_5_10' of module 'clk_5_10' requires 5 connections, but only 3 given [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/Lab_9.v:34]
+INFO: [Synth 8-6157] synthesizing module 'Driver_DAC' [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/Driver_DAC.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/Driver_DAC.v:64]
+INFO: [Synth 8-6157] synthesizing module 'DDS_Addr_Generator' [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/DDS_Addr_Generator.v:23]
+	Parameter NWORD bound to: 256 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Clk_Division' [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/Clk_Division.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Clk_Division' (2#1) [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/Clk_Division.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DDS_Addr_Generator' (3#1) [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/DDS_Addr_Generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Rom_Sin' [F:/vivoda/Lab_9/Lab_9.runs/synth_1/.Xil/Vivado-21852-DESKTOP-D6U3LDD/realtime/Rom_Sin_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Rom_Sin' (4#1) [F:/vivoda/Lab_9/Lab_9.runs/synth_1/.Xil/Vivado-21852-DESKTOP-D6U3LDD/realtime/Rom_Sin_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Rom_Squ' [F:/vivoda/Lab_9/Lab_9.runs/synth_1/.Xil/Vivado-21852-DESKTOP-D6U3LDD/realtime/Rom_Squ_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Rom_Squ' (5#1) [F:/vivoda/Lab_9/Lab_9.runs/synth_1/.Xil/Vivado-21852-DESKTOP-D6U3LDD/realtime/Rom_Squ_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Rom_Tri' [F:/vivoda/Lab_9/Lab_9.runs/synth_1/.Xil/Vivado-21852-DESKTOP-D6U3LDD/realtime/Rom_Tri_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Rom_Tri' (6#1) [F:/vivoda/Lab_9/Lab_9.runs/synth_1/.Xil/Vivado-21852-DESKTOP-D6U3LDD/realtime/Rom_Tri_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_DAC' (7#1) [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/Driver_DAC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Lab_9' (8#1) [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/Lab_9.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ADC_part' [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/ADC_part.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [F:/vivoda/Lab_9/Lab_9.runs/synth_1/.Xil/Vivado-21852-DESKTOP-D6U3LDD/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (9#1) [F:/vivoda/Lab_9/Lab_9.runs/synth_1/.Xil/Vivado-21852-DESKTOP-D6U3LDD/realtime/clk_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'clk_10' of module 'clk_wiz_0' requires 5 connections, but only 3 given [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/ADC_part.v:47]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [F:/vivoda/Lab_9/Lab_9.runs/synth_1/.Xil/Vivado-21852-DESKTOP-D6U3LDD/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (10#1) [F:/vivoda/Lab_9/Lab_9.runs/synth_1/.Xil/Vivado-21852-DESKTOP-D6U3LDD/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Driver_HDMI' [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/Driver_HDMI.v:24]
+	Parameter H_ACTIVE_1280_720 bound to: 16'b0000010100000000 
+	Parameter H_FP_1280_720 bound to: 16'b0000000001101110 
+	Parameter H_SYNC_1280_720 bound to: 16'b0000000000101000 
+	Parameter H_BP_1280_720 bound to: 16'b0000000011011100 
+	Parameter V_ACTIVE_1280_720 bound to: 16'b0000001011010000 
+	Parameter V_FP_1280_720 bound to: 16'b0000000000000101 
+	Parameter V_SYNC_1280_720 bound to: 16'b0000000000000101 
+	Parameter V_BP_1280_720 bound to: 16'b0000000000010100 
+	Parameter H_TOTAL_1280_720 bound to: 16'b0000011001110010 
+	Parameter V_TOTAL_1280_720 bound to: 16'b0000001011101110 
+	Parameter H_ACTIVE_1920_1080 bound to: 16'b0000011110000000 
+	Parameter H_FP_1920_1080 bound to: 16'b0000000001011000 
+	Parameter H_SYNC_1920_1080 bound to: 16'b0000000000101100 
+	Parameter H_BP_1920_1080 bound to: 16'b0000000010010100 
+	Parameter V_ACTIVE_1920_1080 bound to: 16'b0000010000111000 
+	Parameter V_FP_1920_1080 bound to: 16'b0000000000000100 
+	Parameter V_SYNC_1920_1080 bound to: 16'b0000000000000101 
+	Parameter V_BP_1920_1080 bound to: 16'b0000000000100100 
+	Parameter H_TOTAL_1920_1080 bound to: 16'b0000100010011000 
+	Parameter V_TOTAL_1920_1080 bound to: 16'b0000010001100101 
+INFO: [Synth 8-6155] done synthesizing module 'Driver_HDMI' (11#1) [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/Driver_HDMI.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Driver_ADC' [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/Driver_ADC.v:23]
+	Parameter Sampling_Num bound to: 38400 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Freq_Cal' [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/Freq_Cal.v:23]
+	Parameter Measure_Num bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Freq_Cal' (12#1) [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/Freq_Cal.v:23]
+WARNING: [Synth 8-689] width (18) of port connection 'Period' does not match port width (21) of module 'Freq_Cal' [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/Driver_ADC.v:66]
+INFO: [Synth 8-6157] synthesizing module 'Wave_Ram' [F:/vivoda/Lab_9/Lab_9.runs/synth_1/.Xil/Vivado-21852-DESKTOP-D6U3LDD/realtime/Wave_Ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Wave_Ram' (13#1) [F:/vivoda/Lab_9/Lab_9.runs/synth_1/.Xil/Vivado-21852-DESKTOP-D6U3LDD/realtime/Wave_Ram_stub.v:6]
+WARNING: [Synth 8-689] width (16) of port connection 'addra' does not match port width (8) of module 'Wave_Ram' [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/Driver_ADC.v:72]
+WARNING: [Synth 8-689] width (18) of port connection 'addrb' does not match port width (8) of module 'Wave_Ram' [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/Driver_ADC.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_ADC' (14#1) [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/Driver_ADC.v:23]
+WARNING: [Synth 8-689] width (21) of port connection 'Period' does not match port width (18) of module 'Driver_ADC' [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/ADC_part.v:83]
+INFO: [Synth 8-6157] synthesizing module 'Wave_Generator' [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/Wave_Generator.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Wave_Generator' (15#1) [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/Wave_Generator.v:23]
+WARNING: [Synth 8-689] width (21) of port connection 'Offset' does not match port width (18) of module 'Wave_Generator' [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/ADC_part.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_part' (16#1) [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/ADC_part.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (17#1) [F:/vivoda/Lab_9/Lab_9.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3331] design Wave_Generator has unconnected port RGB_VDE
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[17]
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[16]
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[15]
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[14]
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[13]
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[12]
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[11]
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[10]
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[9]
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[8]
+WARNING: [Synth 8-3331] design top has unconnected port ADC_data[7]
+WARNING: [Synth 8-3331] design top has unconnected port ADC_data[6]
+WARNING: [Synth 8-3331] design top has unconnected port ADC_data[5]
+WARNING: [Synth 8-3331] design top has unconnected port ADC_data[4]
+WARNING: [Synth 8-3331] design top has unconnected port ADC_data[3]
+WARNING: [Synth 8-3331] design top has unconnected port ADC_data[2]
+WARNING: [Synth 8-3331] design top has unconnected port ADC_data[1]
+WARNING: [Synth 8-3331] design top has unconnected port ADC_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 535.555 ; gain = 161.520
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 535.555 ; gain = 161.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 535.555 ; gain = 161.520
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/Rom_Tri/Rom_Tri/Rom_Tri_in_context.xdc] for cell 'Lab_9/Driver_DAC0/Rom_Tri'
+Finished Parsing XDC File [f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/Rom_Tri/Rom_Tri/Rom_Tri_in_context.xdc] for cell 'Lab_9/Driver_DAC0/Rom_Tri'
+Parsing XDC File [f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/Rom_Squ/Rom_Squ/Rom_Squ_in_context.xdc] for cell 'Lab_9/Driver_DAC0/Rom_Squ'
+Finished Parsing XDC File [f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/Rom_Squ/Rom_Squ/Rom_Squ_in_context.xdc] for cell 'Lab_9/Driver_DAC0/Rom_Squ'
+Parsing XDC File [f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/Rom_Sin/Rom_Sin/Rom_Sin_in_context.xdc] for cell 'Lab_9/Driver_DAC0/Rom_Sin'
+Finished Parsing XDC File [f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/Rom_Sin/Rom_Sin/Rom_Sin_in_context.xdc] for cell 'Lab_9/Driver_DAC0/Rom_Sin'
+Parsing XDC File [f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'ADC_part/clk_10'
+Finished Parsing XDC File [f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'ADC_part/clk_10'
+Parsing XDC File [f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'ADC_part/rgb2dvi_0'
+Finished Parsing XDC File [f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'ADC_part/rgb2dvi_0'
+Parsing XDC File [f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/Wave_Ram/Wave_Ram/Wave_Ram_in_context.xdc] for cell 'ADC_part/Driver_ADC0/Sampling_38400_0'
+Finished Parsing XDC File [f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/Wave_Ram/Wave_Ram/Wave_Ram_in_context.xdc] for cell 'ADC_part/Driver_ADC0/Sampling_38400_0'
+Parsing XDC File [f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/clk_5_10_1/clk_5_10/clk_5_10_in_context.xdc] for cell 'Lab_9/clk_5_10'
+Finished Parsing XDC File [f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/clk_5_10_1/clk_5_10/clk_5_10_in_context.xdc] for cell 'Lab_9/clk_5_10'
+Parsing XDC File [F:/vivoda/Lab_9/Lab_9.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [F:/vivoda/Lab_9/Lab_9.srcs/constrs_1/new/system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/vivoda/Lab_9/Lab_9.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 839.387 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 839.387 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 839.387 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 839.387 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ADC_part/Driver_ADC0/Sampling_38400_0' at clock pin 'clkb' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 839.387 ; gain = 465.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 839.387 ; gain = 465.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Clk_N. (constraint file  f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Clk_N. (constraint file  f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Clk_P. (constraint file  f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Clk_P. (constraint file  f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[0]. (constraint file  f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[0]. (constraint file  f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[1]. (constraint file  f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[1]. (constraint file  f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[2]. (constraint file  f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[2]. (constraint file  f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[0]. (constraint file  f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[0]. (constraint file  f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[1]. (constraint file  f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[1]. (constraint file  f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[2]. (constraint file  f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[2]. (constraint file  f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/clk_5_10_1/clk_5_10/clk_5_10_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  f:/vivoda/Lab_9/Lab_9.srcs/sources_1/ip/clk_5_10_1/clk_5_10/clk_5_10_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for Lab_9/Driver_DAC0/Rom_Tri. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Lab_9/Driver_DAC0/Rom_Squ. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Lab_9/Driver_DAC0/Rom_Sin. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_part/clk_10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_part/rgb2dvi_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_part/Driver_ADC0/Sampling_38400_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Lab_9/clk_5_10. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 839.387 ; gain = 465.352
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "Measure_Delta_Clear" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 839.387 ; gain = 465.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 10    
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   5 Input     12 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 3     
+	   3 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input     24 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	  18 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Clk_Division 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module DDS_Addr_Generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module Driver_DAC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 4     
+Module Driver_HDMI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
+	   5 Input     12 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module Freq_Cal 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Driver_ADC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module Wave_Generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
++---Muxes : 
+	   3 Input     24 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "Freq_Cal0/Measure_Delta_Clear" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design Wave_Generator has unconnected port RGB_VDE
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[17]
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[16]
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[15]
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[14]
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[13]
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[12]
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[11]
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[10]
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[9]
+WARNING: [Synth 8-3331] design Driver_ADC has unconnected port Read_Addr[8]
+WARNING: [Synth 8-3331] design top has unconnected port ADC_data[7]
+WARNING: [Synth 8-3331] design top has unconnected port ADC_data[6]
+WARNING: [Synth 8-3331] design top has unconnected port ADC_data[5]
+WARNING: [Synth 8-3331] design top has unconnected port ADC_data[4]
+WARNING: [Synth 8-3331] design top has unconnected port ADC_data[3]
+WARNING: [Synth 8-3331] design top has unconnected port ADC_data[2]
+WARNING: [Synth 8-3331] design top has unconnected port ADC_data[1]
+WARNING: [Synth 8-3331] design top has unconnected port ADC_data[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Lab_9/Driver_DAC0/DDS_Addr_Generator0/Clk_Division_1/Is_Odd_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ADC_part/Driver_ADC0/Clk_Division_ADC/Is_Odd_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 839.387 ; gain = 465.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'ADC_part/clk_10/clk_out1' to pin 'ADC_part/clk_10/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'ADC_part/clk_10/clk_out2' to pin 'ADC_part/clk_10/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Lab_9/clk_5_10/clk_out1' to pin 'Lab_9/clk_5_10/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Lab_9/clk_5_10/clk_out2' to pin 'Lab_9/clk_5_10/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 839.387 ; gain = 465.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 840.973 ; gain = 466.938
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 847.410 ; gain = 473.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \Lab_9/clk_5_10  has unconnected pin reset
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC_part/clk_10  has unconnected pin reset
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 847.410 ; gain = 473.375
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 847.410 ; gain = 473.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 847.410 ; gain = 473.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 847.410 ; gain = 473.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 847.410 ; gain = 473.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 847.410 ; gain = 473.375
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |rgb2dvi_0     |         1|
+|3     |Wave_Ram      |         1|
+|4     |clk_5_10      |         1|
+|5     |Rom_Sin       |         1|
+|6     |Rom_Squ       |         1|
+|7     |Rom_Tri       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |Rom_Sin   |     1|
+|2     |Rom_Squ   |     1|
+|3     |Rom_Tri   |     1|
+|4     |Wave_Ram  |     1|
+|5     |clk_5_10  |     1|
+|6     |clk_wiz_0 |     1|
+|7     |rgb2dvi_0 |     1|
+|8     |BUFG      |     1|
+|9     |CARRY4    |   143|
+|10    |LUT1      |    26|
+|11    |LUT2      |   281|
+|12    |LUT3      |   222|
+|13    |LUT4      |   132|
+|14    |LUT5      |    73|
+|15    |LUT6      |    91|
+|16    |FDCE      |     1|
+|17    |FDRE      |   232|
+|18    |IBUF      |     2|
+|19    |OBUF      |     3|
++------+----------+------+
+
+Report Instance Areas: 
++------+--------------------------+-------------------+------+
+|      |Instance                  |Module             |Cells |
++------+--------------------------+-------------------+------+
+|1     |top                       |                   |  1253|
+|2     |  ADC_part                |ADC_part           |  1103|
+|3     |    Driver_ADC0           |Driver_ADC         |   898|
+|4     |      Clk_Division_ADC    |Clk_Division_0     |    57|
+|5     |      Freq_Cal0           |Freq_Cal           |   778|
+|6     |    Driver_HDMI0          |Driver_HDMI        |   181|
+|7     |    Wave_Generator0       |Wave_Generator     |    13|
+|8     |  Lab_9                   |Lab_9              |   144|
+|9     |    Driver_DAC0           |Driver_DAC         |   141|
+|10    |      DDS_Addr_Generator0 |DDS_Addr_Generator |    98|
+|11    |        Clk_Division_1    |Clk_Division       |    57|
++------+--------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 847.410 ; gain = 473.375
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 847.410 ; gain = 169.543
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 847.410 ; gain = 473.375
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 143 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 849.402 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 46 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 849.402 ; gain = 487.539
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 849.402 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/vivoda/Lab_9/Lab_9.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  1 00:06:42 2020...
